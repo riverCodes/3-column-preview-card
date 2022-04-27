@@ -8,13 +8,19 @@
   --very-light-gray: hsl(0, 0%, 95%);
   box-sizing: border-box;
 }
-@media (max-width: 500px) {
-  main {
-    flex-direction: row;
-  }
-}
 body {
-  margin: 1.5rem;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: auto;
+}
+body > * {
+  margin-block: 1rem;
+}
+body > main {
+  margin-block: auto;
 }
 main {
   display: flex;
@@ -59,6 +65,7 @@ main {
   text-decoration: none;
   padding: 1rem 2rem;
   border-radius: 2rem;
+  white-space: nowrap;
 }
 .sedan-link {
   color: var(--bright-orange);
@@ -70,3 +77,26 @@ main {
   color: var(--very-dark-cyan);
 }
 
+@media (min-width: 900px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  main {
+    flex-direction: row;
+    border-radius: .5rem;
+    width: 60%;
+  }
+  .plan-cards {
+    max-width: 100%;
+  }
+  .plan-description {
+    margin-bottom: 6rem;
+  }
+  .sedan {
+    border-radius: .5rem 0 0 .5rem;
+  }
+  .luxury {
+    border-radius: 0 .5rem .5rem 0;
+  }
+}
