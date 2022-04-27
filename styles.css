@@ -28,6 +28,8 @@ main {
   flex-direction: column;
   background-color: lightgray;
   border-radius: .5rem;
+  max-width: 21rem;
+
 }
 .plan-cards {
   padding: 3rem 3rem 4rem 3rem;
