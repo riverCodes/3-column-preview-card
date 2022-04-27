@@ -67,6 +67,11 @@ main {
   border-radius: 2rem;
   white-space: nowrap;
 }
+.plan-link:hover {
+  color: var(--very-light-gray);
+  background-color: transparent;
+  border: 3px solid var(--very-light-gray);
+}
 .sedan-link {
   color: var(--bright-orange);
 }
