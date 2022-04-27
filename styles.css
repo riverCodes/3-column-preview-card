@@ -1,0 +1,72 @@
+:root {
+  font-size: 15px;
+  font-family: 'Lexend Deca', sans-serif;
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --very-light-gray: hsl(0, 0%, 95%);
+  box-sizing: border-box;
+}
+@media (max-width: 500px) {
+  main {
+    flex-direction: row;
+  }
+}
+body {
+  margin: 1.5rem;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  background-color: lightgray;
+  border-radius: .5rem;
+}
+.plan-cards {
+  padding: 3rem 3rem 4rem 3rem;
+}
+.sedan {
+  background-color: var(--bright-orange);
+  flex: 1;
+  border-radius: .5rem .5rem 0 0;
+}
+.suv {
+  background-color: var(--dark-cyan);
+  flex: 1;
+}
+.luxury {
+  background-color: var(--very-dark-cyan);
+  flex: 1;
+  border-radius: 0 0 .5rem .5rem;
+}
+.icons {
+  display: block;
+}
+.plan-title {
+  font-size: 2.5rem;
+  font-family: 'Big Shoulders Display', sans-serif;
+  color: var(--very-light-gray);
+  margin: 2rem 0;
+}
+.plan-description {
+  color: var(--transparent-white);
+  line-height: 1.8;
+  margin-bottom: 2.5rem;
+}
+.plan-link {
+  cursor: pointer;
+  background-color: var(--very-light-gray);
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+}
+.sedan-link {
+  color: var(--bright-orange);
+}
+.suv-link {
+  color: var(--dark-cyan);
+}
+.luxury-link {
+  color: var(--very-dark-cyan);
+}
+
